@@ -2,6 +2,7 @@ package linkedin;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +19,7 @@ public class linkedinlogin {
 		WebDriver driver=new ChromeDriver();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		driver.get("https://www.linkedin.com/");
-		driver.findElement(By.id("session_key") ).sendKeys("ravindra226@gmail.com");
+		driver.findElement(By.id("session_key") ).sendKeys("");
 		driver.findElement(By.id("session_password")).sendKeys("");
 		driver.findElement(By.name("submit")).click();
 		driver.findElement(By.cssSelector("div[aria-label='Account']")).click();
